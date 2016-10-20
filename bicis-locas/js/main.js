@@ -28,7 +28,7 @@ function validateForm(){
 	// o la longitud del apellido es cero
 	// o si no existe espacios entre el apellido
 	if( apellido == null || apellido.length == 0 || /^\s+$/.test(apellido) ) {
-		alert('Campo de Apellido vacio');
+		alert('Inserta tu Apellido');
 		return false;
 	// si el apellido tiene numeros o caracteres distintos	
 	} else if (!(/^[a-zA-Z\s]*$/.test(apellido))){
@@ -41,7 +41,7 @@ function validateForm(){
 	//CORREO
 
 	if( correo == null || correo.length == 0 || /^\s+$/.test(correo) ) {
-		alert('Campo de correo vacio');
+		alert('Inserta tu correo');
 		return false;
 	} else if (!(/^([a-z]+[a-z1-9._-]*)@{1}([a-z1-9\.]{2,})\.([a-z]{2,3})$/.test(correo))){
 		alert('Correo incorrecto');
